@@ -1,0 +1,31 @@
+{
+    "name": "filippo-toso/open-graph-protocol",
+    "description": "A Laravel facade to render Open Graph Protocol tags",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Filippo Toso",
+            "email": "filippo@toso.dev"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "illuminate/support": ">=5.5",
+        "chriskonnertz/open-graph": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FilippoToso\\OpenGraphProtocol\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FilippoToso\\OpenGraphProtocol\\OpenGraphProtocolServiceProvider"
+            ],
+            "aliases": {
+                "Ogp": "FilippoToso\\OpenGraphProtocol\\OpenGraphProtocolFacade"
+            }
+        }
+    }
+}
