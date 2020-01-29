@@ -11,7 +11,7 @@ composer require filippo-toso/open-graph-protocol
 ```
 
 ## Usage
-
+ 
 The `Ogp` facade alias is available everywhere. You can use it in your controllers but also in a service provider or a middleware. 
 
 For instance, in your controller:
